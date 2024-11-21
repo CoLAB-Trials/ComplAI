@@ -1,0 +1,20 @@
+chunking:
+  type: "semantic" #simple, recursive, semantic, agentic
+  chunk_size: 1000
+  chunk_overlap: 200
+  epochs: 10
+
+embeddings:
+  model: "hkunlp/instructor-xl"
+  provider: "HuggingFace"
+
+model:
+  name: "meta-llama/Llama-3.2-3B-Instruct"
+  provider: "HuggingFace"
+
+retrieval:
+  type: "reranking_retriever" #base_retriever, reranking_retriever, reranking_filtering_retriever, multi_query_retriever, ensemble_retriever
+  search_type: "similarity"
+  search_kwargs: 
+    k: 20
+  reranking_n: 4
