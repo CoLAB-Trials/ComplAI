@@ -14,6 +14,7 @@ from langchain_core.messages import HumanMessage
 from langchain_openai import OpenAIEmbeddings
 from langchain_together import TogetherEmbeddings
 from utils.prompts import REGULATORY_EXPERT, MD_CLASS, PROMPT_REWRITER, TEXT_IMPROVER
+import os 
     
 def initialize_embedding_model(provider: str = "HuggingFace", model: str = "hkunlp/instructor-xl") -> object:
     """
@@ -74,7 +75,7 @@ def llm_initialization(provider: str = "HuggingFace", model: str = "meta-llama/L
     Returns:
     llm: An initialized language model object based on the specified provider and model.
     """
-    
+    os
     if provider == "HuggingFace":
         llm = setup_llm_pipeline(model_name=model, temperature=temperature)
     elif provider == "OpenAI":

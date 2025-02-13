@@ -28,8 +28,8 @@ def main():
     
     config = load_config("config.yaml")
     embeddings = initialize_embedding_model()
-    llm_rewriting = llm_initialization(model=config["models"]["rewriting"]["name"], provider=config["models"]["rewriting"]["provider"], temperature=config["models"]["rewriting"]["temperature"])
-    llm_generation = llm_initialization(model=config["models"]["generation"]["name"], provider=config["models"]["generation"]["provider"], temperature=config["models"]["generation"]["temperature"])
+    llm_rewriting = llm_initialization(model=config["models"]["rewriting"]["name"], provider=config["models"]["rewriting"]["provider"], temperature=config["models"]["rewriting"]["temperature"], api_key= st.secrets["openai_secret_key"])
+    llm_generation = llm_initialization(model=config["models"]["generation"]["name"], provider=config["models"]["generation"]["provider"], temperature=config["models"]["generation"]["temperature"], api_key= st.secrets["openai_secret_key"])
     if "conversation" not in st.session_state:
         
         # Load or create vectorstore
