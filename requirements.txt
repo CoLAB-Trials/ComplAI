@@ -312,17 +312,6 @@ openai==1.58.1
 opencv-python==4.10.0.84
 opencv-python-headless==4.10.0.84
 openpyxl==3.1.5
-opentelemetry-api==1.24.0
-opentelemetry-exporter-otlp-proto-common==1.24.0
-opentelemetry-exporter-otlp-proto-grpc==1.24.0
-opentelemetry-exporter-otlp-proto-http==1.28.2
-opentelemetry-instrumentation==0.45b0
-opentelemetry-instrumentation-asgi==0.45b0
-opentelemetry-instrumentation-fastapi==0.45b0
-opentelemetry-proto==1.24.0
-opentelemetry-sdk==1.24.0
-opentelemetry-semantic-conventions==0.45b0
-opentelemetry-util-http==0.45b0
 orjson==3.10.7
 outcome==1.3.0.post0
 overrides==7.7.0
