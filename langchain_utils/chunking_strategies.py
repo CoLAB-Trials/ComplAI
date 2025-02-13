@@ -1,26 +1,29 @@
 import os
-import torch  # to check for CUDA
 from langchain_text_splitters import RecursiveCharacterTextSplitter, CharacterTextSplitter
-import pandas as pd
 from langchain_experimental.text_splitter import SemanticChunker
 from langchain_community.embeddings import HuggingFaceInstructEmbeddings
 from langchain_core.prompts import ChatPromptTemplate
 from pydantic import BaseModel, Field
-from langchain_huggingface import HuggingFacePipeline
-from transformers import AutoModelForCausalLM, AutoTokenizer, GenerationConfig, pipeline, AutoModelForSeq2SeqLM
+from transformers import AutoTokenizer, AutoModelForSeq2SeqLM
 import torch
 from langchain import hub
 from typing import List
 from langchain_openai import ChatOpenAI
 import json
-import os
-from PyPDF2 import PdfReader
-from langchain_text_splitters import RecursiveCharacterTextSplitter
-import pandas as pd
 import time
-from utils.reading_data import get_pdf_text_from_folder
-
-def get_text_chunks(text, chunk_size=None, chunk_overlap=None, method="simple"):
+from langchain.schema import HumanMessage
+def get_text_chunks(text: str, chunk_size: int = None, chunk_overlap: int = None, method: str = "simple") -> list:
+    """
+    Splits the given text into chunks based on the specified method.
+    Parameters:
+    text (str): The text to be chunked.
+    chunk_size (int, optional): The size of each chunk. Default is None.
+    chunk_overlap (int, optional): The overlap between chunks. Default is None.
+    method (str, optional): The method to use for chunking. Options are "simple", "recursive", 
+                            "semantic", "agentic", and "contextual". Default is "simple".
+    Returns:
+    list: A list of text chunks.
+    """
     
     if method == "simple":
         chunks = get_simple_text_chunks(text, chunk_size, chunk_overlap)
@@ -30,40 +33,97 @@ def get_text_chunks(text, chunk_size=None, chunk_overlap=None, method="simple"):
         chunks = get_semantic_text_chunks(text)
     elif method == "agentic":
         chunks = agentic_chunking(text)
+    elif method == "contextual":
+        chunks = get_contextual_chunks(text, chunk_size, chunk_overlap)
 
     return chunks
 
 
-def get_simple_text_chunks(text, chunk_size, chunk_overlap):
+def get_simple_text_chunks(texts: list, chunk_size: int, chunk_overlap: int) -> list:
     """
-    Splits the input text into overlapping chunks using a CharacterTextSplitter and returns the result as a DataFrame.
+    Splits the input text into overlapping chunks using a CharacterTextSplitter.
 
     Parameters:
-    text (str): The input text to be split into chunks.
+    texts (list): The input texts to be split into chunks.
+    chunk_size (int): The size of each chunk.
+    chunk_overlap (int): The overlap between chunks.
 
     Returns:
-    pd.DataFrame: A DataFrame containing the text chunks in a column named 'CharacterTextSplitter'.
+    list: A list containing the text chunks.
     """
-    
     text_splitter = CharacterTextSplitter(
         separator="\n",
         chunk_size=chunk_size,
         chunk_overlap=chunk_overlap,
         length_function=len
     )
-    chunks = text_splitter.split_text(text)
+    chunks = text_splitter.split_documents(texts)
     
     return chunks
 
-def get_recursive_text_chunks(text, chunk_size, chunk_overlap):
+def get_recursive_text_chunks(texts: list, chunk_size: int, chunk_overlap: int) -> list:
     """
-    Splits the input text into overlapping chunks using a RecursiveCharacterTextSplitter and returns the result as a DataFrame.
+    Splits the input text into overlapping chunks using a RecursiveCharacterTextSplitter.
 
     Parameters:
-    text (str): The input text to be split into chunks.
+    texts (list): The input texts to be split into chunks.
+    chunk_size (int): The size of each chunk.
+    chunk_overlap (int): The overlap between chunks.
 
     Returns:
-    pd.DataFrame: A DataFrame containing the text chunks in a column named 'RecursiveCharacterTextSplitter'.
+    list: A list containing the text chunks.
+    """
+    text_splitter = RecursiveCharacterTextSplitter(
+        chunk_size=chunk_size,
+        chunk_overlap=chunk_overlap,
+        length_function=len
+    )
+    chunks = text_splitter.split_documents(texts)
+    
+    return chunks
+
+def get_semantic_text_chunks(texts: list) -> list:
+    """
+    Splits a list of text elements into semantic chunks using Hugging Face embeddings.
+
+    This function initializes Hugging Face embeddings and uses a semantic chunker to split
+    each text element into smaller, meaningful chunks based on semantic content. The function
+    ensures that the embeddings utilize CUDA if available for faster processing.
+
+    Args:
+        texts (list): A list of text elements, where each element is expected to have a 
+                      'page_content' attribute containing the text to be chunked.
+
+    Returns:
+        list: A list of semantic chunks extracted from the input texts.
+    """
+    
+    device = "cuda" if torch.cuda.is_available() else "cpu"
+
+    embeddings = HuggingFaceInstructEmbeddings(model_name="NeuML/pubmedbert-base-embeddings", model_kwargs={"device": device})
+    chunks = []
+    text_splitter = SemanticChunker(
+        embeddings,
+        breakpoint_threshold_type='percentile', 
+            #'standard_deviation',
+            #'interquartile',
+            #'gradient'
+        #breakpoint_threshold_amount=90
+    )
+    chunks = text_splitter.split_documents(texts)
+    return chunks
+
+def get_contextual_chunks(texts: list, chunk_size: int, chunk_overlap: int) -> list:
+    """
+    Splits the input text into overlapping chunks using a RecursiveCharacterTextSplitter and provides contextual information for each chunk.
+
+    Parameters:
+    texts (list): The input texts to be split into chunks.
+    chunk_size (int): The size of each chunk.
+    chunk_overlap (int): The overlap between chunks.
+
+    Returns:
+    list: A list containing the text chunks with contextual information.
     """
     
     text_splitter = RecursiveCharacterTextSplitter(
@@ -71,28 +131,67 @@ def get_recursive_text_chunks(text, chunk_size, chunk_overlap):
         chunk_overlap=chunk_overlap,
         length_function=len
     )
-    chunks = text_splitter.split_text(text)
-    
-    return chunks
- 
-def get_semantic_text_chunks(text):
-    # Initialize Hugging Face embeddings and ensure it uses CUDA if available
-    device = "cuda" if torch.cuda.is_available() else "cpu"
-    print(device)
-    embeddings = HuggingFaceInstructEmbeddings(model_name="hkunlp/instructor-xl", model_kwargs={"device": device})
-    text_splitter = SemanticChunker(
-        embeddings,
-        breakpoint_threshold_type=#'percentile', 
-            'standard_deviation',
-            #'interquartile',
-            #'gradient'
-        breakpoint_threshold_amount=0.1
-    )
-    chunks = text_splitter.split_text(text)
-    
-    return chunks
+    final_chunks = []
+    for text in texts:
+        chunks = text_splitter.split_text(text.page_content)
+        for chunk in chunks:
+            
+            DOCUMENT_CONTEXT_PROMPT = """
+            <document>
+            {doc_content}
+            </document>
+            """
 
+            CHUNK_CONTEXT_PROMPT = """
+            Here is the chunk we want to situate within the whole document
+            <chunk>
+            {chunk_content}
+            </chunk>
 
+            Please give a short succinct context to situate this chunk within the overall document for the purposes of improving search retrieval of the chunk.
+            Answer only with the succinct context and nothing else.
+            """
+            """ anthropic_client = anthropic.Anthropic(api_key=anthropic_api_key)
+            response = anthropic_client.beta.prompt_caching.messages.create(
+                model="claude-3-haiku-20240307",
+                max_tokens=1000,
+                temperature=0.0,
+                messages=[
+                    {
+                        "role": "user", 
+                        "content": [
+                            {
+                                "type": "text",
+                                "text": DOCUMENT_CONTEXT_PROMPT.format(doc_content=text),
+                                "cache_control": {"type": "ephemeral"} #we will make use of prompt caching for the full documents
+                            },
+                            {
+                                "type": "text",
+                                "text": CHUNK_CONTEXT_PROMPT.format(chunk_content=chunk),
+                            },
+                        ]
+                    },
+                ],
+                extra_headers={"anthropic-beta": "prompt-caching-2024-07-31"}
+            ) """
+            chat = ChatOpenAI(
+                model="gpt-4o-mini", 
+                temperature=0.0
+            )
+
+            # Construct the prompts
+            document_context_message = HumanMessage(
+                content=DOCUMENT_CONTEXT_PROMPT.format(doc_content=text.page_content)
+            )
+            chunk_context_message = HumanMessage(
+                content=CHUNK_CONTEXT_PROMPT.format(chunk_content=chunk)
+            )
+
+            # Send the messages to the GPT-4 model
+            response = chat([document_context_message, chunk_context_message])
+            final_chunks.append(f"{chunk}\n\n{response.content}")
+    
+    return final_chunks
 
 def get_proposition_text_chunks(input_text):
     

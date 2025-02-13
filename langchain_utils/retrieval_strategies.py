@@ -10,9 +10,13 @@ from langchain.retrievers.document_compressors import DocumentCompressorPipeline
 from langchain_community.cross_encoders.huggingface import HuggingFaceCrossEncoder
 from langchain_community.embeddings import HuggingFaceInstructEmbeddings
 from langchain_community.retrievers import TavilySearchAPIRetriever
+from langchain.storage import InMemoryStore
+from langchain_text_splitters import RecursiveCharacterTextSplitter
+from langchain_chroma import Chroma
+from langchain.retrievers import ParentDocumentRetriever
+from langchain.schema import Document
 
-
-def simple_retriever(vectorstore, search_type='similarity', search_kwargs=None):
+def simple_retriever(vectorstore: Chroma, search_type: str = 'similarity', search_kwargs: dict = None) -> Chroma:
     """
     Create a retriever with customizable search parameters.
 
@@ -36,7 +40,7 @@ def simple_retriever(vectorstore, search_type='similarity', search_kwargs=None):
 
     return vectorstore.as_retriever(search_type=search_type, search_kwargs=search_kwargs)
 
-def get_reranker(provider="Cohere", model_name=None):
+def get_reranker(provider: str = "Cohere", model_name: str = None, top_n: int = 10) -> object:
     """
     Creates a reranker based on the specified provider.
 
@@ -50,14 +54,14 @@ def get_reranker(provider="Cohere", model_name=None):
         object: A reranker for ranking documents.
     """
     if provider == "HuggingFace":
-        model = HuggingFaceCrossEncoder(model_name="BAAI/bge-reranker-v2-m3")
-        compressor = CrossEncoderReranker(model=model, top_n=10)
+        model = HuggingFaceCrossEncoder(model_name=model_name)
+        compressor = CrossEncoderReranker(model=model, top_n=top_n)
     elif provider == "Cohere":
-        compressor = CohereRerank(cohere_api_key=os.environ['COHERE_API_KEY'], model="rerank-multilingual-v3.0", top_n=10)
+        compressor = CohereRerank(cohere_api_key=os.environ['COHERE_API_KEY'], model="rerank-multilingual-v3.0", top_n=top_n)
 
     return compressor
 
-def create_pipeline_compressor(base_retriever, model='hkunlp/instructor-xl', provider="Cohere"):
+def create_pipeline_compressor(base_retriever: Chroma, model: str = 'hkunlp/instructor-xl', provider: str = "Cohere", top_n: int = 10, model_name: str = None) -> ContextualCompressionRetriever:
     """
     Creates a pipeline compressor combining reranking, redundancy filtering, 
     and relevance filtering for document retrieval.
@@ -72,60 +76,75 @@ def create_pipeline_compressor(base_retriever, model='hkunlp/instructor-xl', pro
     """    
     embeddings = HuggingFaceInstructEmbeddings(model_name=model)
     redundant_filter = EmbeddingsRedundantFilter(embeddings=embeddings)
-    relevant_filter = EmbeddingsFilter(embeddings=embeddings,similarity_threshold=0.7)
+    relevant_filter = EmbeddingsFilter(embeddings=embeddings, similarity_threshold=0.7)
     
-    compressor = get_reranker(provider)
-    pipeline = DocumentCompressorPipeline(transformers=[compressor,redundant_filter,relevant_filter])
+    compressor = get_reranker(provider, model_name=model_name, top_n=top_n)
+    pipeline = DocumentCompressorPipeline(transformers=[compressor, redundant_filter, relevant_filter])
     
     compression_retriever = ContextualCompressionRetriever(base_compressor=pipeline, base_retriever=base_retriever)
     
     return compression_retriever
 
-def ensemble_retriever(base_retriever, chunks, provider="Cohere"):
+def ensemble_retriever(retrievers: list) -> EnsembleRetriever:
     """
-    Creates an ensemble retriever combining BM25 and a compression retriever.
+    Creates an ensemble retriever combining multiple retrievers.
 
     Args:
-        base_retriever: The base retriever to use for compression.
-        chunks (list): The text chunks for the BM25 retriever.
-        provider (str): The reranker provider ("Cohere" or "HuggingFace"). Defaults to "Cohere".
+        retrievers (list): List of retrievers to combine.
 
     Returns:
-        EnsembleRetriever: A retriever combining BM25 and compression-based retrieval.
+        EnsembleRetriever: A retriever combining multiple retrieval strategies.
     """
-    compression_retriever = ContextualCompressionRetriever(base_compressor=get_reranker(provider), base_retriever=base_retriever)
-    bm25_retriever = BM25Retriever.from_texts(chunks, search_kwargs={"k": 4})
-    
-    ensemble_retriever = EnsembleRetriever(retrievers=[bm25_retriever, compression_retriever])
+    ensemble_retriever = EnsembleRetriever(retrievers=retrievers, k=1)
     
     return ensemble_retriever
 
-def retriever(llm, vectorstore, chunks=None, retriever_type='reranking_retriever', search_type='similarity', search_kwargs=None):
+def parent_document_retriever(text_chunks: list, embeddings: object) -> ParentDocumentRetriever:
     """
-    Create a history-aware retriever.
+    Creates a parent document retriever that indexes child chunks and retrieves parent documents.
+
+    Args:
+        text_chunks (list): List of text chunks to be indexed.
+        embeddings: Embedding function to use for vector store.
+
+    Returns:
+        ParentDocumentRetriever: A retriever that retrieves parent documents based on child chunks.
+    """
+    parent_splitter = RecursiveCharacterTextSplitter(chunk_size=4000)
+    child_splitter = RecursiveCharacterTextSplitter(chunk_size=300)
+    vectorstore = Chroma(
+        collection_name="full_documents", embedding_function=embeddings
+    )
+    store = InMemoryStore()
+    
+    retriever = ParentDocumentRetriever(
+        vectorstore=vectorstore,
+        docstore=store,
+        child_splitter=child_splitter,
+        parent_splitter=parent_splitter,
+    )
+    retriever.add_documents(text_chunks)
+    
+    return retriever
+
+def retriever(llm: object, vectorstore: Chroma, chunks: list = None, config: dict = None, embeddings: object = None) -> object:
+    """
+    Create a history-aware retriever based on the provided configuration.
 
     Args:
         llm: Language model for query contextualization.
         vectorstore: Vector store for document retrieval.
         chunks (list, optional): Document chunks for ensemble retrievers. Defaults to None.
-        retriever_type (str): Type of retriever to create. Options:
-            - 'base_retriever'
-            - 'multi_query_retriever'
-            - 'reranking_retriever'
-            - 'reranking_filtering_retriever'
-            - 'ensemble_retriever'
-        search_type (str, optional): Search strategy. Options: 'similarity', 'mmr', 'similarity_score_threshold'.
-            Defaults to 'similarity'.
-        search_kwargs (dict, optional): Additional search parameters. Defaults to None.
+        config (dict): Configuration dictionary specifying retriever type, search type, and other parameters.
+        embeddings (object, optional): Embedding function for parent document retriever. Defaults to None.
 
     Returns:
-        A history-aware retriever object.
+        object: A history-aware retriever object.
 
     Raises:
         ValueError: If an invalid `retriever_type` is provided.
     """
-
-    ### Contextualize question ###
+    # Contextualize question
     contextualize_q_system_prompt = (
         "Given a chat history and the latest user question "
         "which might reference context in the chat history, "
@@ -140,26 +159,57 @@ def retriever(llm, vectorstore, chunks=None, retriever_type='reranking_retriever
             ("human", "{input}"),
         ]
     )
-    if retriever_type =='web_search_retriever':
+
+    # Determine the type of retriever to create
+    retriever_type = config["retrieval"]["type"]
+    if retriever_type == 'web_search_retriever':
         retriever = TavilySearchAPIRetriever()
+    elif retriever_type == 'parent_document_retriever':
+        retriever = parent_document_retriever(chunks, embeddings)
     else:
-        base_retriever = simple_retriever(vectorstore, search_type, search_kwargs)
-        
+        base_retriever = simple_retriever(vectorstore, config["retrieval"]["search_type"], config["retrieval"]["search_kwargs"])
         if retriever_type == 'base_retriever':
             retriever = base_retriever
         elif retriever_type == 'multi_query_retriever':
             retriever = MultiQueryRetriever.from_llm(retriever=base_retriever, llm=llm)
-        elif retriever_type == 'reranking_retriever':
-            retriever = ContextualCompressionRetriever(base_compressor=get_reranker(), base_retriever=base_retriever)
-        elif retriever_type == 'reranking_filtering_retriever':
-            retriever = create_pipeline_compressor(base_retriever)
         elif retriever_type == 'ensemble_retriever':
-            retriever = ensemble_retriever(base_retriever, chunks)
+            retrievers = []
+            ensemble_config = config["retrieval"]["ensemble_retriever"]
+            if "web_search_retriever" in ensemble_config:
+                retrievers.append(TavilySearchAPIRetriever(k=4))
+            if "multi_query_retriever" in ensemble_config:
+                retrievers.append(MultiQueryRetriever.from_llm(retriever=base_retriever, llm=llm))
+            if "base_retriever" in ensemble_config:
+                retrievers.append(base_retriever)
+            if "keyword_retriever" in ensemble_config:
+                retrievers.append(BM25Retriever.from_texts(chunks, search_kwargs={"k": 4}))
+            retriever = ensemble_retriever(retrievers)
         else:
             raise ValueError(f"Unknown retriever_type: {retriever_type}")
-    
+
+    # Apply filtering and reranking if enabled
+    if config["retrieval"]["filtering"]["enabled"] and config["retrieval"]["reranking"]["enabled"]:
+        retriever = create_pipeline_compressor(
+            retriever,
+            model=config["retrieval"]["filtering"]["embedding_model"],
+            provider=config["retrieval"]["reranking"]["provider"],
+            top_n=config["retrieval"]["reranking"]["top_n"],
+            model_name=config["retrieval"]["reranking"]["model_name"]
+        )
+    elif config["retrieval"]["reranking"]["enabled"]:
+        retriever = ContextualCompressionRetriever(
+            base_compressor=get_reranker(
+                config["retrieval"]["reranking"]["provider"],
+                model_name=config["retrieval"]["reranking"]["model_name"],
+                top_n=config["retrieval"]["reranking"]["top_n"]
+            ),
+            base_retriever=retriever
+        )
+
+    # Create history-aware retriever
     history_aware_retriever = create_history_aware_retriever(
         llm, retriever, contextualize_q_prompt
     )
-    
+
     return history_aware_retriever
+
