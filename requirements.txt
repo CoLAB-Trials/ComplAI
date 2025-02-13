@@ -503,7 +503,7 @@ torchvision==0.19.1
 tornado==6.4.1
 tqdm==4.66.5
 traitlets==5.14.3
-transformers @ git+https://github.com/huggingface/transformers@014047e1c8784c00e2a04cb04ffcecdd5cb23c16
+transformers==4.45.2
 trio==0.27.0
 trio-websocket==0.11.1
 triton==3.0.0
