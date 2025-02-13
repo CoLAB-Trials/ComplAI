@@ -90,8 +90,6 @@ et_xmlfile==2.0.0
 eval_type_backport==0.2.0
 execnet==2.1.1
 executing==2.1.0
-faiss-cpu==1.9.0
-faiss-gpu-cu12==1.8.0.2
 Faker==30.8.0
 fastapi==0.115.0
 fastavro==1.9.7
