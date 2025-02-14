@@ -32,7 +32,7 @@ def handle_userinput(user_question, llm, config):
 def main():
     
     config = load_config("config.yaml")
-    embeddings = initialize_embedding_model(model=config["embeddings"]["model"], provider=config["embeddings"]["provider"])
+    embeddings = initialize_embedding_model(model=config["embeddings"]["model"], provider=config["embeddings"]["provider"], api_key= st.secrets["openai_secret_key"])
     llm_rewriting = llm_initialization(model=config["models"]["rewriting"]["name"], provider=config["models"]["rewriting"]["provider"], temperature=config["models"]["rewriting"]["temperature"], api_key= st.secrets["openai_secret_key"])
     llm_generation = llm_initialization(model=config["models"]["generation"]["name"], provider=config["models"]["generation"]["provider"], temperature=config["models"]["generation"]["temperature"], api_key= st.secrets["openai_secret_key"])
     if "conversation" not in st.session_state:

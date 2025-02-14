@@ -16,7 +16,7 @@ from langchain_together import TogetherEmbeddings
 from utils.prompts import REGULATORY_EXPERT, MD_CLASS, PROMPT_REWRITER, TEXT_IMPROVER
 import os 
     
-def initialize_embedding_model(provider: str = "HuggingFace", model: str = "hkunlp/instructor-xl") -> object:
+def initialize_embedding_model(provider: str = "HuggingFace", model: str = "hkunlp/instructor-xl", api_key = os.environ.get("OPENAI_API_KEY")) -> object:
     """
     Initialize an embedding model from a specified provider.
     Parameters:
@@ -32,7 +32,7 @@ def initialize_embedding_model(provider: str = "HuggingFace", model: str = "hkun
     if provider == "HuggingFace":
         embeddings = HuggingFaceEmbeddings(model_name=model, model_kwargs={"device": device})
     elif provider == "OpenAI":
-        embeddings = OpenAIEmbeddings(model=model)
+        embeddings = OpenAIEmbeddings(model=model, api_key=api_key)
     elif provider == "TogetherAI":
         embeddings = TogetherEmbeddings(model=model)
     
