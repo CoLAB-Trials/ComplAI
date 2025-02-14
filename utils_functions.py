@@ -65,7 +65,7 @@ def setup_llm_pipeline(model_name: str = "meta-llama/Llama-3.2-3B-Instruct", tem
 
     return HuggingFacePipeline(pipeline=text_pipeline)
 
-def llm_initialization(provider: str = "HuggingFace", model: str = "meta-llama/Llama-3.2-3B-Instruct", temperature: float = 0) -> object:
+def llm_initialization(provider: str = "HuggingFace", model: str = "meta-llama/Llama-3.2-3B-Instruct", temperature: float = 0, api_key = os.environ.get("OPENAI_API_KEY")) -> object:
     """
     Initialize a language model (LLM) based on the specified provider and model.
     Parameters:
@@ -79,7 +79,7 @@ def llm_initialization(provider: str = "HuggingFace", model: str = "meta-llama/L
     if provider == "HuggingFace":
         llm = setup_llm_pipeline(model_name=model, temperature=temperature)
     elif provider == "OpenAI":
-        llm = ChatOpenAI(model=model, max_retries=2)
+        llm = ChatOpenAI(model=model, max_retries=2, api_key=api_key)
     elif provider == "TogetherAI":
         llm = ChatTogether(model=model, temperature=temperature, max_retries=2)
     elif provider == "Groq":
