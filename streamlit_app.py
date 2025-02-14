@@ -41,7 +41,7 @@ def main():
         if vectorstore_existence_check(config):
             vectorstore = load_vectorstore(embeddings, config, llm=llm_generation)
         else:
-            folder_path = os.path.join(os.path.dirname(__file__), "Training_materials_for_models/")
+            folder_path = os.path.join(os.path.dirname(__file__), "Training materials for models/")
 
             raw_text = reader(folder_path, config["reader"]["provider"], config["reader"]["file_type"])
             if config["reader"]["file_type"] == "PDF": 
