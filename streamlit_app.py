@@ -15,6 +15,7 @@ from utils_functions import setup_llm_pipeline, create_conversation_chain, curat
 from langchain_utils.vectorstore_strategies import get_vectorstore, load_vectorstore, vectorstore_existence_check
 from langchain_utils.retrieval_strategies import retriever
 from utils.reading_data import reader
+import os
 
 #set_debug(True)
 
@@ -40,7 +41,9 @@ def main():
         if vectorstore_existence_check(config):
             vectorstore = load_vectorstore(embeddings, config, llm=llm_generation)
         else:
-            raw_text = reader(config["pdf_path"], config["reader"]["provider"], config["reader"]["file_type"])
+            folder_path = os.path.join(os.path.dirname(__file__), "Training_materials_for_models")
+
+            raw_text = reader(folder_path, config["reader"]["provider"], config["reader"]["file_type"])
             if config["reader"]["file_type"] == "PDF": 
                 text_chunks = get_text_chunks(raw_text, config["chunking"]["chunk_size"], 
                                         config["chunking"]["chunk_overlap"], 
