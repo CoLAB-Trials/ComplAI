@@ -12,12 +12,11 @@ from langchain_community.embeddings import HuggingFaceInstructEmbeddings
 from langchain_community.retrievers import TavilySearchAPIRetriever
 from langchain.storage import InMemoryStore
 from langchain_text_splitters import RecursiveCharacterTextSplitter
-#from langchain_chroma import Chroma
-from langchain_milvus import Milvus
+from langchain_chroma import Chroma
 from langchain.retrievers import ParentDocumentRetriever
 from langchain.schema import Document
 
-def simple_retriever(vectorstore: Milvus, search_type: str = 'similarity', search_kwargs: dict = None) -> Milvus:
+def simple_retriever(vectorstore: Chroma, search_type: str = 'similarity', search_kwargs: dict = None) -> Chroma:
     """
     Create a retriever with customizable search parameters.
 
@@ -62,7 +61,7 @@ def get_reranker(provider: str = "Cohere", model_name: str = None, top_n: int = 
 
     return compressor
 
-def create_pipeline_compressor(base_retriever: Milvus, model: str = 'hkunlp/instructor-xl', provider: str = "Cohere", top_n: int = 10, model_name: str = None) -> ContextualCompressionRetriever:
+def create_pipeline_compressor(base_retriever: Chroma, model: str = 'hkunlp/instructor-xl', provider: str = "Cohere", top_n: int = 10, model_name: str = None) -> ContextualCompressionRetriever:
     """
     Creates a pipeline compressor combining reranking, redundancy filtering, 
     and relevance filtering for document retrieval.
@@ -113,7 +112,7 @@ def parent_document_retriever(text_chunks: list, embeddings: object) -> ParentDo
     """
     parent_splitter = RecursiveCharacterTextSplitter(chunk_size=4000)
     child_splitter = RecursiveCharacterTextSplitter(chunk_size=300)
-    vectorstore = Milvus(
+    vectorstore = Chroma(
         collection_name="full_documents", embedding_function=embeddings
     )
     store = InMemoryStore()
@@ -128,7 +127,7 @@ def parent_document_retriever(text_chunks: list, embeddings: object) -> ParentDo
     
     return retriever
 
-def retriever(llm: object, vectorstore: Milvus, chunks: list = None, config: dict = None, embeddings: object = None) -> object:
+def retriever(llm: object, vectorstore: Chroma, chunks: list = None, config: dict = None, embeddings: object = None) -> object:
     """
     Create a history-aware retriever based on the provided configuration.
 
