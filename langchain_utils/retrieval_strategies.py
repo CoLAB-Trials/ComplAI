@@ -40,7 +40,7 @@ def simple_retriever(vectorstore: Chroma, search_type: str = 'similarity', searc
 
     return vectorstore.as_retriever(search_type=search_type, search_kwargs=search_kwargs)
 
-def get_reranker(provider: str = "Cohere", model_name: str = None, top_n: int = 10, api_key = os.environ['COHERE_API_KEY']) -> object:
+def get_reranker(provider: str = "Cohere", model_name: str = None, top_n: int = 10, api_key = os.environ.get("COHERE_API_KEY")) -> object:
     """
     Creates a reranker based on the specified provider.
 
@@ -127,7 +127,7 @@ def parent_document_retriever(text_chunks: list, embeddings: object) -> ParentDo
     
     return retriever
 
-def retriever(llm: object, vectorstore: Chroma, chunks: list = None, config: dict = None, embeddings: object = None, api_key = os.environ['COHERE_API_KEY']) -> object:
+def retriever(llm: object, vectorstore: Chroma, chunks: list = None, config: dict = None, embeddings: object = None, api_key = os.environ.get("COHERE_API_KEY")) -> object:
     """
     Create a history-aware retriever based on the provided configuration.
 

@@ -62,7 +62,7 @@ def main():
 
         # Setup conversation chain
         llm_retrieve = llm_initialization(model=config["models"]["retrieve"]["name"], provider=config["models"]["retrieve"]["provider"], temperature=config["models"]["retrieve"]["temperature"], api_key= st.secrets["openai_secret_key"])
-        retriever_chain = retriever(llm_retrieve, vectorstore, config=config, embeddings=embeddings, api_key= st.secrets["cohere_secret_key"])
+        retriever_chain = retriever(llm_retrieve, vectorstore, config=config, embeddings=embeddings, api_key=st.secrets["cohere_secret_key"])
         
         # create conversation chain
         st.session_state.conversation = create_conversation_chain(llm_generation, retriever_chain, config)
