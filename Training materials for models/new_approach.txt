@@ -1,0 +1,451 @@
+EI Ref. Ares(2015)2068632 - 18/05/2015
+
+EUROPEAN COMMISSION DG HEALTH AND CONSUMER Directorate B, Unit B2 “Cosmetics and medical devices”
+
+MEDICAL DEVICES: Guidance document
+
+Classification of medical devices
+
+MEDDEV 2. 4/1 Rev. 9 June 2010
+
+GUIDELINES RELATING TO THE APPLICATION OF
+
+THE COUNCIL DIRECTIVE 93/42/EEC ON MEDICAL DEVICES
+
+Foreword
+
+The present MEDDEV is part of a set of guidelines relating to questions of application of EU Directives on medical devices. They are not legally binding. Only the European Court of J ustice can give an authoritative interpretation of Community Law.
+
+This MEDDEV contains guidance for the application of the classification rules for medical devices as set out in Annex IX of Directive 93/42/EEC1, as amended. It is for the national Competent Authorities and national Courts to take legally binding decisions on a case-by-case basis.
+
+Directive 93/42/EEC, as amended, allows for derogation from the classification rules outlined in its Annex IX in light of technical progress or on information gathered from post-rmmarket experience with the device.
+
+* OJ L 169, 12.7.1993, p. 1
+
+This MEDDEV has been revised after consultation with various interested parties (e.g. Competent Authorities, Commission services, industry and other stakeholders) and therefore this document reflects a consensus view on the classification of medical devices.
+
+Active implantable medical devices and in vitro diagnostic medical devices are covered by separate Directives, which do not apply the classification rules reviewed in this MEDDEV.
+
+Note: This document is a revision of an earlier document published in J uly 2001 as MEDDEV 2.4/1 rev 8. It includes information pertaining to the changes in Classification resulting from the amending and inplementing Directives issued since the last revision of this document in 2001, including derogation of the Classification rules in the case of breast implants and hip, knee and shoulder joint replacements and requirements related to devices containing hurman blood derivatives and medical devices manufactured utilising tissues of animal origin. In addition this guidance document takes account of the changes arising from Directive 2007/47/EC? which further amends Directive 93/42/EEC and became applicable as from 21%t March 2010.
+
+? OJ L 247, 21.9.2007, p. 21
+
+CONTENTS 1. PURPOSE AND PHILOSOPHY OF MEDICAL DEVICE CLASSIFICATION 2. PRACTICAL RELEVANCE OF CLASSIFICATION 2.1. General requirements 2.2. Conformity assessment 2.3. Clinical evaluation and investigation 2.4. Instructions for use 2.5. Miscellaneous 3. HOW TO CARRY OUT CLASSIFICATION 3.1. Basic definitions 3.2. Application of the classification rules 3.3. How to use the rules 3.4. Practical example 3.5. Handling of interpretational problems 4. EXPLANATIONS OF INDIVIDUAL RULES 4.1. Graphical summary - Guidance chart 4.2. General explanation of rules/practical issues/examples
+
+1. PURPOSE AND PHILOSOPHY OF MEDICAL DEVICE CLASSIFICATION
+
+It is not feasible economically nor justifiable in practice to subject all medical devices to the most rigorous conformity assessment procedures available. A graduated system of control is more appropriate. In such a system, the level of control corresponds to the level of potential hazard inherent in the type of device concemed. A medical device classification system is therefore needed, in order to apply to medical devices an appropriate conformity assessment procedure.
+
+In order to ensure that conformity assessment under the Medical Device Directive functions effectively, manufacturers should be able to detenrine the Classification of their product as early as possible in device development. It was therefore decided to set up a system of classification rules within the Directive, so that each manufacturer could classify its own devices.
+
+The classification of medical devices is a ‘risk based’ system based on the vulnerability of the hurnan body taking account of the potential risks associated with the devices. This approach allows the use of a set of criteria that can be combined in various ways in order to detenvine classification, e.g. duration of contact with the body, degree of invasiveness and local vs. systerric effect These criteria can then be applied to a vast range of different medical devices and technologies. These are referred to as the ‘classification rules’ and are set out in Annex IX of Directive 93/42/EEC. They correspond, to a large extent, to the classification rules established by the Global Harmonization Task Force (GHTF) in the guidance document GHTF/SG1/N15:2006?.
+
+It is recognized that although the existing rules will adequately classify the vast majority of existing devices, a small number of products may be more difficult to classify. Such cases may in particular include devices which are borderline cases between two different classes of medical devices. In addition there may be devices that cannot be classified by the existing rules because of their unusual nature or situations where the classification would result in the wrong level of conformity assessment in light of the hazard represented by the device (See also section 3.5).
+
+2. PRACTICAL RELEVANCE OF CLASSIFICATION
+
+2.1. General requirements
+
+Irrespective of the class of the device, all devices must
+
+- meet the essential requirements, including the requirements regarding the information to be supplied by the manufacturer (Annex | of the Directive 93/42/EEC); - be subject to the reporting requirements under the medical device vigilance systeny
+
+8 hhttp://www.ghtf.org/documents/sg1/SG 1-N15-2006-Classification- FINA L.pdf
+
+Medical devices must be CE marked, except for custom-made devices and those intended for clinical investigation, in which case they should comply with the provisions of Annex VIII of Directive 93/42/EEC regarding the statement on devices for special purposes. Conformity assessment is the method by which a manufacturer demonstrates that their devices comply with the requirements of Directive 93/42/EEC. The classification of the medical device will have an impact on the conformity assessment route that the manufacturer should follow in order to affix the CE marking on the medical device. Conformity assessment procedures are outlined as follows: Annex II (+ section 4) is applicable to I measure and IIa and IIb devices; Annex II (- section 4) is applicable to I Sterile and I measure devices, and it also applies to III; Annex III is relevant for III; Annex IV applies to I Sterile, I measure, IIa, IIb, and III; Annex V is relevant for I Sterile, I measure, IIa, IIb, and III; Annex VI is applicable to I Sterile, I measure, IIa, IIb, and III; and Annex VII is relevant for I Sterile, I measure, IIa, IIb, and III. Technical documentation relating to products in class IIa and class IIb must be reviewed by a notified body based on a programme of representative sampling in the context of Annexes II, V, and VI of Directive 93/42/EEC. As part of the Essential Requirements, a clinical evaluation in accordance with Annex X must be conducted for all medical devices (Annex I part I, 6a of Directive 93/42/EEC).
+
+The Medical Devices Directive states in Annex X that as a general rule confirmation of conformity with the requirements conceming the characteristics and performances referred to in sections 1 and 3 of Annex | of Directive 93/42/EEC under the normal conditions of use of the device and the evaluation of the undesirable side-effects must be based on clinical data.
+
+In addition, according to Annex X Section 1.1a of Directive 93/42/EEC “in the case of irplantable devices and devices in class III clinical investigations shall be performed unless it is duly justified to rely on existing clinical data’:
+
+For further guidance on clinical evaluation see MEDDEV 2.7.1 Rev.34.
+
+Pursuant to article 15.1, in case of devices intended for clinical investigations, the rmanufacturer shall notify the Competent Authorities of the Merrber States in which the investigations are to be conducted in accordance with section 2.2 of Annex VIII.
+
+Clinical investigations with Class IIl devices and implantable and long-term invasive devices falling within Class Ila or IIb may start 60 days after the manufacturer's notification to the Competent Authority unless the Competent Authority has notified a decision to the contrary based on considerations of public health or public policy within this timeframe (article 15.2). For further details see article15 of Directive 93/42/EEC.
+
+2.4. Instructions for use
+
+Instructions for use are not required for Class | and Ila devices if these devices can be used safely without any such instructions (Annex | Section 13.1. of Directive 93/42/EEC).
+
+2.5. Miscellaneous
+
+The manufacturer of a Class | medical device, or his relevant authorised representative in the European Union designated by him, must notify their address and a description of the devices concemed to the Competent Authority of the Member State where they have their registered place of business (Article 14, paragraphs 1 and 2 of Directive 93/42/EEC).
+
+For medical devices of classes Ila, IIb and III, Member States may request to be informed of all data allowing for identification of such devices together with the label and the instructions for use when such devices are put into service within their territory (second sub-paragraph of Article 14, paragraph 1, of Directive 93/42/EEC).
+
+3. HOW TO CARRY OUT CLASSIFICATION
+
+* http://ec.europa.eu/consumers/sectors/medical-devices/files/meddev/2 7 lrev_ 3 enpdf
+
+The manufacturer should first decide if the product concemed is a medical device as defined in Directive 93/42/EEC or an accessory to such a medical device, if it is not excluded fromthe scope of this Directive and if it therefore comes within the scope of this Directive.
+
+3.1. Basic definitions
+
+The classification rules are based on different criteria such as the duration of contact with the patient, the degree of invasiveness and the part of the body affected by the use of the device. Intended purpose is defined in Article 1 paragraph 2(g) of Directive 93/42/EEC. The other terms are defined in chapter | section 1 of Annex IX of Directive 93/42/EEC.
+
+These definitions are reproduced below, together with some additional guidance.
+
+3.1.1. Intended purpose
+
+‘Intended purpose” means the use for which the device is intended according to the data supplied by the manufacturer on the labelling, in the instructions and/or in promotional materials.
+
+3.1.2. Time
+
+3.1.2.1. Duration
+
+Transient
+
+Normally intended for continuous use for less than 60 minutes.
+
+Short term
+
+Normally intended for continuous use for not more than 30 days.
+
+Long term
+
+Normally intended for continuous use for more than 30 days.
+
+In certain instances the duration of effect for a product needs to be considered as the duration of use. For instance, application of a topical cream to the skin may only take seconds to apply but the cream may remain in situ for many hours. The duration of use should therefore not be considered as the time taken to apply the product but rather the duration for which the product achieves its intended purpose.
+
+3.1.2.2 Concept of continuous use
+
+In calculating the duration referred to in Section 1.1 of Chapter | of Annex IX to Directive 93/42/EEC, continuous use means “an uninterrupted actual use of the device for the intended purpose. However where usage of a device is discontinued in order for the device to be replaced immediately by the same or an identical device this shall be considered as an extension of the continuous use of the device” (Section 2.6 of Chapter II of Annex IX to Directive 93/42/EEC).
+
+For example, a scalpel may be used on the sarre patient throughout an operation that may last for several hours. The uninterrupted use for an intended purpose, i.e. cutting tissue, will normally not last for more than a few seconds at a time. Therefore a scalpel is a transient use device. However where usage of a device is discontinued in order for the device to be replaced immediately by the same or an identical device (e.g. replacement of a ureteric catheter) this shall be considered an extension of the continuous use of the device.
+
+If it cannot be demonstrated that components of the device is totally elinrinated in the interval between uses, this is also considered as an immediate replacement.
+
+3.1.3. Invasiveness
+
+Invasive devices
+
+A device which, in whole or in part, penetrates inside the bod, either through a body orifice or through the surface of the body.
+
+Body orifice
+
+Any natural opening in the body, as well as the external surface of the eyeball, or any permanent artificial opening, such as a storma.
+
+Surgically invasive device
+
+An invasive device which penetrates inside the body through the surface of the body, with the aid of or in the context of a surgical operation.
+
+For the purposes of this Directive devices other than those referred to in the previous subparagraph and which produce penetration other than through an established body orifice, shall be treated as surgically invasive devices.
+
+The term surgical operation used in this definition includes all clinical interventional procedures in which a device is placed into the body through the surface in the context of a surgical operation or other clinical procedure
+
+In this context it should be noted the following:
+
+- Asurgically created storra used in urostomy, colostomy and ileostomy or permanent tracheostomy is considered to be a body orifice. Therefore devices introduced into such a stoma are not surgically invasive. A surgically created opening to allow access to the circulatory system in contrast should not be considered to be such a "body orifice". Devices introduced into such an opening are surgically invasive.
+
+- Adevice that administers energy to the body should not be considered as invasive if only energy penetrates the body and not the device itself. Energy as such is not a device and therefore it cannot be classified. Only the device generating the energy must be classified. However, if a device adrrinisters a substance, whether this substance is a medicine or a medical device, such a substance must be assessed in its own right (e.g. substances administered by a jet injector).
+
+Any device which, in whole or in part, penetrates inside the body, either through a natural body orifice or through the surface of the body is an invasive device. A surgically invasive device always implies that it enters through an artificially created opening. This can be a large opening, such as a surgical incision, or it can be a pinprick opening created by a needle. Therefore surgical gloves and needles used with syringes are surgically invasive.
+
+The concept of surgically invasive should be understood as covering also liquids that are in invasive contact with organs, tissue or other parts of the body if the access for such liquids is through a surgically created opening.
+
+Reusable surgical instrument
+
+Instrument intended for surgical use by cutting, drilling, sawing, scratching, scraping, clamping, retracting, clipping or similar procedures, without connection to any active medical device and which can be reused after appropriate procedures have been carried out (Section 1.3 of Annex IX of Directive 93/42/EEC).
+
+Implantable device
+
+Any device which is intended:
+
+- to be totally introduced into the human boaly or,
+
+- to replace an epithelial surface or the surface of the eye,
+
+by surgical intervention which is intended to remain in place after the procedure.
+
+Any device intended to be partially introduced into the human body through surgical intervention and intended to remain in place after the procedure for at least 30 days is also considered an implantable device.
+
+One of the key elements in defining an implantable device is the concept of "procedure". Thus an implantable device must remain in the patient after the procedure. A "procedure" must be understood in this context to include the surgical procedure during which the implant is placed into the body and the immediate post-operative care that is associated with the procedure. The "procedure" does not extend to the conclusion of the therapeutic treatment, e.g. the removal of an implant must be considered to be another "procedure". Thus a plate used to reduce a fracture of the bone is an implant even if it is taken out after the fracture has healed. In this case the placing of the plate and its explantation are two different surgical procedures.
+
+Sore partially implanted devices are deemed to be implants. For instance, if an operation is carried out specifically to place an infusion port into the body, then such an infusion port would remain for at least 30 days after the procedure and consequently be an implant However, a nor-tunnelled central venous catheter which is intended for use for temporary vascular access and intended to be removed after 7 - 10 days is not a long-term implantable device. Nor would a suture used for skin wound closure that is taken out prior to 30 days be considered an implant
+
+Critical anatomical locations
+
+For the purposes of the Directive 93/42/EEC, ‘central circulatory system” rreans the following vessels:
+
+arteriae pulmonales, aorta ascendens, arcus aorta, aorta descendens to the bifurcatio aortae, arteriae coronariae, arteria carotis communis, arteria carotis externa, arteria carotis interna, arteriae cerebrales, truncus brachiocephalicus,
+
+venae corals, venae pulmonales, vena cava superior, vena cava inferior.
+
+For the purposes of the Directive 93/42/EEC the ‘central nervous system’ rreans brain, meninges and spinal cord.
+
+3.1.4. Active medical devices
+
+Any rredical device operation of which depends on a source of electrical energy or any source of power other than that directly generated by the hurnan body or gravity and which acts by converting this energy. Medical devices intended to transmit energy, substances or other elements between an active medical device and the patient, without any significant change, are not considered to be active medical devices. Stand alone software is considered to be an active medical device.
+
+The concept “act by converting energy” includes conversion of energy in the device and/or conversion at the interface between the device and the tissues or in the tissues.
+
+10
+
+The concept of “significant changes” includes changes in the nature, level and density of energy (See Rule 9). This means that for instance an electrode is not an active device under this classification system as long as the energy input is intended to be the samme as the energy output For instance, resistance in a wire that causes minor changes between input and output cannot be considered to constitute "significant change". However, electrodes used in electrosurgery for cutting tissues or cauterisation are active devices because their operation depends on energy provided by a generator and their action is achieved by conversion of energy at the interface between the device and the tissue or in the tissue. Electrodes intended for E.C.G. or E.E.G are normally not active devices because they do not normally act by conversion of energy.
+
+However, it should be understood that an electrode, which is an accessory of an active implant, is covered under the relevant Directive for active implants. Further inforrration on this issue can be found in "Guidelines relating to the application of the Council Directive 90/385/EEC on active implantable medical devices>.
+
+The application of energy from the human body does not make a device "active" unless that energy is stored within the device for subsequent release. For instance, energy generated by hurman muscle and applied to the plunger of a syringe (thus causing a substance to be delivered to a patient) does not make this syringe an "active device". However, if a drug delivery system depends upon manual winding to preload a spring which is subsequently released to deliver a substance, then the device incorporating the spring is an "active device".
+
+Medical devices using prestored gases and/or vacuum as a power source are regarded as active devices, e.g. gas mixers with anaesthesia machines and gas powered suction pun ps.
+
+Heating/cooling pads intended only to release stored thermal energy are not active devices because they do not act by conversion of energy. However, heating/cooling pads which act by chemical action (e.g. endothermic or exothenvic reaction) are active devices as they are converting chemical energy into heat energy and or vice versa.
+
+Radioactive sources that are intended to deliver ionising radiation are regarded as active medical devices, unless they are radiopharnmaceuticals as defined in article 1 of Directive 2001/83/EC or radioactive implants as defined in article 1 of Directive 90/385/EEC.
+
+3.1.5 Devices with a measuring function
+
+Information on devices with a measuring function can be found in MEDDEV 2.1/5°
+
+3.1.6 Procedure packs
+
+5 Ihthp://ec.europa.eu/consumers/sectors/medical-devices/files/meddev/2_ 1-2 04-1994 en.pdf
+
+® http://ec.europa.eu/consumers/sectors/medical-devices/files/meddev/2
+
+15 06-1998 en.pdf
+
+11
+
+Procedure packs per Article 12 of Directive 93/42/EEC normally do not require classification as each device in the procedure pack keeps its own CE marking and classification.
+
+However, in cases where the procedure pack incorporates devices which do not bear a CE marking, or where the chosen combination of devices is not compatible in view of their original intended use, the system or procedure pack shall be treated as a device in its own right and as such be subjected to the relevant procedure pursuant to Article 11 of Directive 93/42/EEC.
+
+For a procedure pack that is a device in its own right, the classification is normally determined by the intended use. In those cases where the intended use of the procedure pack is not specific enough to determine the classification, the classification of the pack is at the level of the highest classified device included in the pack, where applicable taking into account the new intended use of the device.
+
+3.2. Application of the classification rules
+
+In terms of further interpretation of the classification rules, the following should be considered:
+
+- Itis the intended purpose that determines the class of the device and not the particular technical characteristics of the device, unless these have a direct bearing on the intended purpose. e.g. incorporation of an ancillary substance, tissue of animal origin etc.
+
+- It is the intended and not the accidental use of the device that determines the class of the device. For instance a suture organizer, that is intended to keep order of suture threads used in open heart surgery, should not be considered as an invasive device if in the normal use it can be kept outside the patient. Similarly, if a medical practitioner uses the device in a manner not intended by the manufacturer, this does not change the class of the device for the purpose of conformity assessment However, if the nonvral clinical use of the device changes in time with evolving clinical practice such that the intended purpose and classification of the device changes this should be addressed by the manufacturer and the confonvity of the device assessed for the new intended purpose.
+
+Itis the intended purpose assigned by the manufacturer to the device that detenvines the class of the device and not the class assigned to other sirrilar products. For instance two sutures that have the same composition may well have different intended purposes.
+
+
+
+As analtemative to classifying the system as a whole, the detenrvination of the class of a particular device may be made with respect to the simplest configuration that can still be considered, in view of its proper functional features, as a device in its own right. A device that is part of a system e.g. a tube in an extra corporeal circulation set, may be classed as a device in its own right rather than classifying the systemas a whole. The device, however, must be CE marked in its own right as a separate device in such instances.
+
+
+
+12
+
+
+
+Similarly combination devices with parts that have different functional purposes may be analysed separately with respect to each of these parts. For instance, a drainage device will have an invasive tube and a non-invasive collection device. These components may be classified separately, provided that they are also CE marked separately.
+
+- Accessories are classified in their own right separately from the device with which they are used (Annex IX Section 2.2 of Directive 93/42/EEC).
+
+
+
+If a given device can be classified according to several rules, then the highest possible class applies. For instance, a wound dressing incorporating collagen is covered by rules 4 (Class I, Class Ila or Class IIb depending on intended use) and 17 (Class III). All rules must be considered, for instance if an active device is also surgically invasive, the relevant rules for surgically invasive devices must also be considered.
+
+- If the device is not intended to be used solely or principally in a specific part of the body, it must be considered and classified on the basis of the most critical specified use. Classification of the device will have to be detenvined on the basis of claims contained in the information provided with the device. The manufacturer must be sufficiently specific in that regard. If the manufacturer wants to avoid the particular higher classification, then it must clearly define on the labelling the intended purpose in such a way that the device falls into the lower class. The manufacturer must provide as a minimum requirement either appropriate positive or negative indications for use.
+
+- For a device to be "specifically intended" for the purpose referenced in a particular classification rule, the manufacturer must clearly indicate that the device is intended for such a specific purpose in the information accompanying the device. Otherwise it is deemed to have the intended use which is principally used and accepted in general medical practice.
+
+- Multi-application equipment such as laser printers and identification cameras, which may be used in combination with medical devices, are not medical devices unless their manufacturer places them on the market with specific intended purpose as medical devices.
+
+- Due to its complexity, classification of standalone software will be covered in a specific guidance document.
+
+3.3. How to use the rules
+
+The manufacturer must take into consideration all the rules in order to establish the proper classification for its device. It is quite conceivable for instance that one of the general rules that are not specific to active devices, nevertheless applies to such a device. All the device characteristics must be taken into consideration. The characteristic or combination of characteristics in accordance with the intended purpose of the device that rates the highest class detenvines the class for the device as a whole.
+
+By derogation to the classification rules set out in Annex IX of Directive 93/42/EEC, the manufacturers must also take account of additional Directives which may affect the classification of their device or the confonvity route to be followed, e.g.
+
+13
+
+Directive 2003/12/EC on the reclassification of breast implants in the framework of Directive 93/42/EEC concerning medical devices; Directive 2005/50/EC on the reclassification of hip, knee and shoulder joint replacements in the framework of Council Directive 93/42/EEC concerning medical devices; Directive 2003/32/EC introducing detailed specifications as regards the requirements laid down in Council Directive 93/42/EEC with respect to medical devices manufactured utilizing tissues of animal origin.
+
+3.4. Practical example: A simple wound drainage device has three components that must be taken into consideration: the cannula, the tubing, and the collector unit. If the device is sold without a cannula, then the classification of the cannula does not need to be taken into account. It is assumed here that the device is used for short-term duration, i.e. that uninterrupted intended use is more than 60 minutes and less than 30 days. It is furthermore assumed that the collected liquids are not intended to be re-infused into the body nor reprocessed for eventual re-infusion and that the device is not intended to be connected to a powered suction system.
+
+Intended uses: Surgically invasive cannula to reach a wound site in the pleural cavity to drain the cavity (Rule 7, Class IIa); Non-invasive tubing to evacuate body liquids towards the collector (Rule 1, Class I); Non-invasive collector to receive the body liquids (Rule 1, Class I).
+
+The clear conclusion here is that the manufacturer would have a choice of applying Class II A to the whole device or carrying out separate conformity assessment procedures for the cannula on one hand and the tubing and collector on the other hand.
+
+3.5. Handling of interpretational problems.
+
+7 OJ L 28, 4.2.2003, p. 43  
+8 OJ L 210, 12.8.2005, p. 41  
+9 OJ L 105, 26.4.2003, p. 18
+
+In case the manufacturer is unsure how its devices should be classified, it should first consult a Notified Body.
+
+In case doubts remain or there is a disagreement with the Notified Body, the relevant Competent Authority (i.e. the Conpetent Authority to which the notified body is subject) should be approached in accordance with Article 9 of Directive 93/42/EEC.
+
+In addition, Directive 93/42/EEC provides Community wide mechanisms, including a comrittee procedure, to address problems related to classification.
+
+Complex classification issues may be referred to the ‘Borderline and Classification Medical Devices Expert Group’ for resolution. Consensus positions on classification reached by this Expert Group are published for reference in the Manual on Borderline and Classification.
+
+In addition, MEDDEV 2.1/3 rev 3" provides with useful information relating to devices incorporating, as an integral part, a substance which, if used separately, can be considered to be a medicinal product or a human blood derivative, and which is liable to act on the human body with action ancillary to that of the devices.
+
+10 thttp://ec.europa.eu/consumers/sectors/medical-devices/documents/borderine/index_en.htm
+
+™
+
+thttp://ec.europa.eu/consumers/sectors/medical-devices/files/meddev/2_ 1 3 rev 3-12 2009 enpdf
+
+15
+
+The explanations of individual rules are provided in a structured manner. This section starts with a graphical summary of the rules, which serves as a preface to the subsections addressing each rule individually. Each subsection begins with a general explanation of the rule, followed by a tabular presentation of the rule and examples of devices to which it applies. Any special terms that are used are explained, and practical issues related to the rule are clarified. It is important to note that even if a specific device type is given as an example, it does not mean that such devices are always classified as indicated by the example. Manufacturers may assign a different intended use for such a device than what was used in the example's context. 
+
+There is a graphical summary for initial identification of probable device class, known as the medical devices classification guidance chart. However, it is essential to confirm definitive classification by reading all the rules in detail and utilizing additional assistance provided in the guidelines document. This includes general explanations of rules and examples of devices as elaborated in section 4.2.
+
+Subjects covered include Non-invasive devices (Rules 1, 2, 3, 4), Invasive devices (Rules 5, 6, 7, 8), Active devices (Rules 9, 10, 11, 12), and Special rules (Rules 13, 14, 15, 16, 17, 18).
+
+NON INVASIVE DEVICES
+
+Rule 1 do not Rule 2 Channelling or Rule 3 Modify biological or chemical Rule 4 In contact with injured z = touch storing for composition of blood, body skin (mechanical barrier, or contact eventual iquids, other liguids intended for compression, absorb administration infusion exudates) or Zl For use with blood, other body fluids, organs, tissues May be connected to an active medical device in Class II a or higher exchange of gas or heat Only filtration, centrifugation or Intended for wounds which breach dermis and heal only by secondary intent Intended to manage micro-environment of wound + others lla lla lla IIb lla
+
+Either
+
+patient
+
+17
+
+Rule 5 Invasive in body orifice or stoma (not surgically) Transient Connected to an active medical device Short term use Long term use or use i in Class Ila or higher or If only in oral cavity, in ear canal or in nasal cavity and not liable to be absorbed by the mucous membrane If only in oral cavity, in ear canal or in nasal cavity
+
+18
+
+Rule 6 Surgically Invasive — Transient use or Specifically to control/ diagnose/monitor/correct a defect of heart or central circulatory system through direct contact or or For use in direct contact with central nervous system Reusable surgical .: Supply energy/ instrument ionizing radiation Biological effect — mainly or wholly absorbed manner medicinesin a IIb Rule 7 Surgically invasive Short-term use Intended to administer potentially hazardous | "| or or | v "f For use in direct contact with central nervous system Specifically to monitor/ control/diagnose/correct defect of heart or central circulatory system - by direct contact Undergo chemical change in body - or administer medicines (NOT in teeth) Supply Biological effect or energy/ mainly absorbed lonizing radiation Ul IIb IIb
+
+19
+
+Rule 8 Surgically invasive Long-term use and implantable devices "| =| "| Used in direct To be ; Biological effect Undergo chemical Specific derogation: placed in contact with heart or mainly change in body - or breast implants and hip, teeth _ or central absorbed administer medicines knee and shoulder joint circulatory/nervous (NOT in teeth) replacements system Wl ZN
+
+20
+
+ACTIVE DEVICES
+
+Rul le 9 Active therapeutic devices intended to administer or exchange energy Rule 10 Active device for diagnosis. If intended to supply energy, to image in vivo distribution of radiopharmaceuticals, or for direct diagnosis or monitoring of vital physiological processes or Administer or exchange energy in potentially hazardous way IIb lla or or Intended to control or monitor Specifically intended to or influence monitor vital directly the physiological parameters performance ofa class IIb active where variations could result in immediate therapeutic danger device IIb IIb or All devices emitting ionizing radiation and intended for diagnostic and therapeutic interventional radiology IIb Rule 11 Active devices to administer orremove medicines & other substances to or from the body If this is ina potentially hazardous way IIb Rule 12 All other devices
+
+21
+
+active
+
+SPECIAL RULES
+
+Rule 13 Devices incorporating integral medicinal substance liable to act in ancillary way on human body prevention of sexually Rule 14 Devices used for contraception or ransmitted disease: or | If implantable or long-term invasive Rule 15 Specifically to be used for disinfecting medical devices Rule 16 Devices intended for recording of X-ray diagnostic images Specifically to be used for disinfecting invasive devices Rule 18 Blood bags Rule 17 Devices utilizing non- viable animal tissues or derivatives (not devices in contact only with intact Specifically to be used for disinfecting, cleaning, rinsing or hydrating contact lenses IIb
+
+22
+
+Rule 1 applies to devices that either do not touch the patient or only contact intact skin. This is a fallback rule for all devices not covered by more specific rules. Specifically, Rule 1 stipulates that all non-invasive devices are classified as Class I unless a subsequent rule applies to them. Examples include body liquid collection devices intended to be used in such a way that a return flow is unlikely, such as urine collection bottles, ostomy pouches, and incontinence pads. These can be connected to the patient using catheters and tubing. Devices used to immobilize body parts or to apply force or compression, such as non-sterile dressings used for sprains, plaster of Paris, cervical collars, gravity traction devices, and compression hosiery, also fall under this rule. Additionally, devices intended for general external patient support, like hospital beds, patient hoists, walking aids, wheelchairs, stretchers, and dental patient chairs, are included. Other examples are corrective glasses and frames, stethoscopes for diagnosis, eye occlusion plasters, incision drapes, conductive gels, non-invasive electrodes such as those for EEG or ECG, image intensifying screens, and permanent magnets used for removing ocular debris.
+
+Practical issues of classification
+
+Some non-invasive devices are indirectly in contact with the body and can influence internal physiological processes by storing, channelling or treating blood, other body liquids or liquids which are retumed or infused into the body or by generating energy that is delivered to the body. These must be excluded from the application of this Rule and be handled by another rule because of the hazards inherent in such indirect influence on the body.
+
+Rule 2 pertains to devices that channel or store substances for eventual administration into the body and must be considered separately from non-contact devices under Rule 1 due to their potential indirect invasiveness. Such devices channel or store substances like blood, body liquids, or gases, later used in transfusion, infusion, extracorporeal circulation, and delivery of anesthetic gases or oxygen. These devices can include simple gravity-activated delivery systems. According to Rule 2, non-invasive devices intended for channelling or storing substances for eventual infusion or administration into the body are classified as Class IIa if they may connect to an active medical device in Class IIa or higher. Examples include tubing for infusion pumps, antistatic tubing for anesthesia, anesthesia breathing circuits, pressure indicators, pressure limiting devices, and syringes for infusion pumps. They are also Class IIa if used for storing or channelling blood or body liquids or storing organs or tissues. Examples include devices for blood channelling during transfusion or extracorporeal circulation, storage and transport devices for transplantation organs like containers and bags, devices for long-term storage of biological substances like corneas and sperm, and fridges for storing blood or tissues. In all other cases, these devices fall under Class I. Examples of these include devices providing a simple channelling function with gravity, such as administration sets for infusion, or those for temporary containment or storage like cups and spoons for administering medicines, and syringes without needles. Blood bags, however, are classified under a different rule, Rule 18.
+
+If a device, eg. tubing, can be used for a purpose that would cause it to be connected to an active device such a device will be autorratically in Class Ila, unless the manufacturer clearly state that it should not be connected to an active device of Class Ila or higher.
+
+Explanation of special concepts
+
+Note 1: "May be connected to an active device". Such a connection is deemed to exist between a non-active device and an active device where the non-active device forms a link in the transfer of the substance between the patient and the active device and the safety and performance of one of the devices is influenced by the other device. For instance, this applies to tubing in an extracorporeal circulation system which is downstream from a blood pump and in the same blood flow circuit, but not directly in contact with the pump.
+
+26
+
+Rule 3 pertains to non-invasive devices that modify the biological or chemical composition of blood, body liquids, or other liquids intended for infusion into the body. These devices are considered indirectly invasive and are distinct from non-contact devices described in Rule 1. They are designed to modify substances that will eventually be infused into the body. This rule mainly includes sophisticated elements of extracorporeal circulation sets, dialysis systems, autotransfusion systems, and devices for extracorporeal treatment of body fluids, whether or not these fluids are immediately reintroduced into the body. The rule also applies to cases where the patient is not in a closed loop with the device. According to Rule 3, all non-invasive devices intended to modify the biological or chemical composition of blood, other body liquids, or other liquids intended for infusion into the body are classified as Class IIb. Examples of such devices include hemodialysers designed to remove undesirable substances from blood by solute exchange, devices that separate cells by physical means (e.g., gradient medium for sperm separation), and haemodialysis concentrates. However, if the treatment involves filtration, centrifugation, or gas or heat exchange, these devices fall under Class IIa. Examples of these include particulate filtration of blood in extracorporeal circulation systems to remove particles and emboli, centrifugation of blood to prepare it for transfusion or autotransfusion, removal of carbon dioxide and/or addition of oxygen to the blood, and warming or cooling the blood in an extracorporeal circulation system. In practice, these devices are typically used alongside an active medical device classified under Rule 9 or Rule 11. It's important to note that within this rule, filtration and centrifugation are interpreted exclusively as mechanical methods.
+
+Rule 4, concerning non-invasive devices that contact injured skin, primarily addresses wound dressings regardless of wound depth. Traditional products, like those serving as mechanical barriers, are well-understood and pose minimal hazard. Recent technological advancements have introduced new types of wound dressings with non-traditional claims, such as managing a wound's micro-environment to enhance its natural healing mechanism. Some claims even relate to influencing granulation or epithelial formation or preventing wound contraction, aimed at healing by secondary intent. Certain devices used on breached dermis may have life-sustaining purposes, particularly with full-thickness skin destruction over large areas or with systemic effects. Dressings containing medicinal products that serve an ancillary role fall under Class III according to Rule 13. According to Rule 4, all non-invasive devices contacting injured skin are classified as follows: Class I if intended for use as a mechanical barrier, compression, or for exudate absorption. These include wound dressings such as absorbent pads, island dressings, cotton wool, wound strips, adhesive bandages, and gauze dressings, which act as barriers, maintain wound position, or absorb exudates. Class IIb applies to devices intended mainly for wounds that have breached the dermis extensively and can only heal by secondary intent, such as dressings for chronic extensive ulcerated wounds, severe burns breaching the dermis over extensive areas, severe decubitus wounds, or those incorporating means for tissue augmentation and temporary skin substitution. Class IIa covers all other cases, including devices intended to manage a wound's micro-environment. These devices have specific properties to aid the healing process by managing moisture levels, regulating environmental conditions such as humidity, temperature, oxygen, and pH levels, or influencing healing through physical means. They may claim additional healing properties but are not meant for extensive wounds requiring secondary intent healing. They can include adhesives for topical use.
+
+- Polyrrer film dressings Hydrogel dressings Nor+medicated impregnated gauze dressings
+
+
+
+
+
+Practical issues of classification
+
+Products covered under this rule are extremely claim sensitive, e.g. a polymeric film dressing would be in Class Ila if the intended use is to manage the micro-environment of the wound or in Class | if its intended use is lirrited to retaining an invasive cannula at the wound site. Consequently it is injpossible to say a prion that a particular type of dressing is in a given class without knowing its intended use as defined by the manufacturer. However, a claimthat the device is interactive or active with respect to the wound healing process usually implies that the device is in Class IIb.
+
+Most dressings that are intended for a use that is in Class Ila or IIb, also perform functions that are in Class I, e.g. that of a mechanical barrier. Such devices are nevertheless classed according to the intended use in the higher class.
+
+For such devices incorporating a medicinal product or a human blood derivative see Rule 13 or animal tissues or derivatives rendered non-viable see Rule 17.
+
+Explanation of special concepts
+
+- Breached dennis: the wound exposes at least partly the subcutaneous tissue.
+
+- Secondary intent the wound heals by first being filled with granulation tissue, subsequently the epithelium grows back over the granulation tissue and the wound contracts. In contrast primary intent implies that the edges of the wound are close enough or pulled together, e.g. by suturing, to allow the wound to heal. - Askin might be considered as "injured" either because of pathological (e.g. diabetic ulcers) or extemal factors (e.g. burns)
+
+29
+
+Rule 5 addresses devices invasive with respect to body orifices such as the ear, mouth, nose, eye, anus, urethra, and vagina, separately from those that penetrate through a cut in the body surfaces (surgical invasiveness). For short-term use, there is a distinction between invasiveness involving the anterior parts of the ear, mouth, and nose and the other anatomical sites accessible through body orifices. Surgically created stomas, which facilitate the evacuation of urine or feces, are also considered body orifices. Devices covered by this rule are typically diagnostic and therapeutic instruments used in specialties like ENT, ophthalmology, dentistry, proctology, urology, and gynecology. 
+
+Rule 5 includes all invasive devices concerning body orifices, excluding surgically invasive devices, which are not intended for attachment to an active medical device or are meant for connection to a Class I active medical device. 
+
+- These devices fall into Class I if intended for transient use, such as handheld mirrors used in dentistry, dental impression materials, tubes for pumping the stomach, impression trays, enema devices, examination gloves, and urinary catheters intended for transient use, as well as prostatic balloon dilation catheters.
+
+- They are classified into Class IIa if intended for short-term use, which includes short-term corrective contact lenses, tracheal tubes, stents, vaginal pessaries, and indwelling urinary catheters intended for short-term use. However, if these devices are used in the oral cavity up to the pharynx, in an ear canal up to the ear drum, or in a nasal cavity, they remain in Class I. This includes dressings for nose bleeds and materials for manufacturing dentures.
+
+Devices that are intended for long-term use are classified as Class IIb. This includes urethral stents, long-term corrective contact lenses, tracheal cannulae, and urinary catheters meant for extended use. However, if these devices are used in the oral cavity up to the pharynx, within an ear canal up to the ear drum, or in a nasal cavity and are not likely to be absorbed by the mucous membrane, they fall under Class IIa. This category also includes orthodontic wires, fixed dental prostheses, and fissure sealants. All invasive devices related to body orifices, excluding surgically invasive ones, that are meant to connect to an active medical device in Class IIa or a higher class, are classified as Class IIa. Examples of these are tracheostomy or tracheal tubes connected to a ventilator, blood oxygen analyzers placed under the eyelid, powered nasal irrigators, nasopharyngeal airways, some enteral feeding tubes, fibre optics in endoscopes connected to surgical lasers, suction catheters or tubes for stomach drainage, and dental aspirator tips.
+
+Rule 6 addresses surgically invasive devices intended for transient use (less than 60 minutes). This rule primarily encompasses devices used to create a conduit through the skin (such as needles and cannulae), surgical instruments (like scalpels and saws), and various catheters and suckers. According to Rule 6, all surgically invasive devices intended for transient use are classified under Class IIa unless they fall under specific exceptions. Some examples of such devices include needles for suturing, syringe needles, lancets, suckers, single-use scalpels and blades, ophthalmic surgery support devices, staplers, surgical swabs, drill bits connected to active devices, surgical gloves, etchants, testers for artificial heart valves, heart valve occluders, sizers and holders, swabs for sampling exudates, and single-use aortic punches. However, devices specifically designed to control, diagnose, monitor, or correct a defect of the heart or the central circulatory system through direct contact are classified as Class III. These include cardiovascular catheters like angioplasty balloon catheters, stent delivery catheters/systems, and associated guidewires, introducers, and dedicated disposable cardiovascular surgical instruments, such as electrophysiological catheters and electrodes for diagnosis and ablation. Catheters containing sealed radioisotopes, where the isotope is not intended to be released into the body, also fall under this category if used in the central circulatory system, along with distal protection devices. Reusable surgical instruments, on the other hand, are classified under Class I, with examples including scalpels and scalpel handles.
+
+Reamers, drill bits, and saws that are not intended for connection to an active device, as well as retractors such as forceps, excavators, and chisels, and sternum retractors for transient use, are subject to classification considerations. Instruments intended specifically for use in direct contact with the central nervous system, such as neuro-endoscopes, brain spatulas, direct stimulation canulae, spinal cord retractors, and spinal needles, fall into Class III. Instruments intended to supply energy in the form of ionizing radiation fall into Class IIb, for example, catheters containing or incorporating sealed radioisotopes where the radioactive isotope is not intended to be released into the body, and these are specifically for use in the circulatory system, excluding the central circulatory system. Instruments intended to have a biological effect or to be wholly or mainly absorbed are classified as Class IIb. Instruments intended to administer medicines by means of a delivery system, in a manner that is potentially hazardous considering the mode of application, also fall into Class IIb. This includes devices for repeated self-application where dosage levels and the nature of the medicinal product are critical, such as insulin pens. Explanations of special concepts include Note 1, stating that terms like "surgically invasive device", "central circulatory system", "central nervous system", and "reusable surgical instruments" are defined in Section I of Annex IX of Directive 93/42/EEC. Notably, surgical instruments connected to an active device are not considered 'reusable surgical instruments'. Note 2 specifies that the expression "correct a defect" does not cover devices used creatively in heart surgery procedures, such as clamps and aortic punch instruments. Furthermore, the first indent does not apply to aortic punches and similar cutting instruments that perform a similar function to a scalpel. Note 3 clarifies that surgical instruments not specifically intended for purposes described in the first indent, and irrespective of the site of application, are classified as Class IIa if intended for single use and as Class I if they are reusable.
+
+Note 4: Dedicated means that the intended purpose of the device or accessory is to specifically control, diagnose, monitor or correct a defect of the heart or of the central circulatory system.
+
+Note 5: Biological effect All materials and devices have the potential to affect tissues following use in a surgically invasive procedure. A material is considered to have a biological effect if it actively and intentionally induces, alters or prevents a response from the tissues that is mediated by specific reactions at a molecular level. Such a device may be described as bioactive.
+
+Note 6: Wholly or mainly absorbed: The term absorption refers to the degradation of a material within the body and the metabolic elinrination of the resulting degradation products from the body.
+
+Note 7: The concept of "potentially hazardous manner" is related to the characteristics of the device and not the competence of the user.
+
+Rule 7 pertains to surgically invasive devices intended for short-term use, meaning those devices used for more than 60 minutes but less than 30 days. These devices are typically utilized in the context of surgery or post-operative care, such as clamps and drains, as well as infusion devices like cannulae and needles, and various types of catheters. According to Rule 7, all surgically invasive devices intended for short-term use fall under Class IIa, unless they meet specific criteria for a different classification. Firstly, if they are designed specifically to control, diagnose, monitor, or correct a defect of the heart or the central circulatory system through direct contact with these body parts, they are classified as Class III. Examples of such devices include cardiovascular catheters, cardiac output probes, temporary pacemaker leads, thoracic catheters intended to drain the heart (including the pericardium), carotid artery shunts, and ablation catheters. Secondly, if the devices are intended for use in direct contact with the central nervous system, they are also in Class III. Examples include neurological catheters and cortical electrodes. Thirdly, if the devices are meant to supply energy in the form of ionizing radiation, they are classified as Class IIb, with brachytherapy devices being a fitting example. Additionally, if the devices are intended to have a biological effect or to be wholly or mainly absorbed, they fall under Class III, as seen with absorbable sutures and biological adhesives. Lastly, if they are designed to undergo chemical change in the body (except when placed in the teeth) or to administer medicines, they are classified as Class IIb. Adhesives serve as an example in this category. The practical issues of classification highlight the methodologies and criteria used to classify these surgically invasive devices intended for short-term use.
+
+Note 1: Administration of medicines is more than just channelling, it implies also storage and/or influencing the volume and rate of the medicine delivered. Implanted capsules for the slow release of medicines are medicines and not medical devices.
+
+Note 2: The expression “correct a defect” does not cover devices that are used accessorily in heart surgery, e.g. tissue stabilisers.
+
+Rule 8 pertains to implantable devices and long-term surgically invasive devices (those used for over 30 days) and covers a wide range of implants primarily in orthopaedic, dental, ophthalmic, and cardiovascular fields, as well as soft tissue implants like those used in plastic surgery. According to Rule 8, all implantable devices and long-term surgically invasive devices are categorized as Class IIb unless specified otherwise. For instance, devices such as prosthetic joint replacements not covered by Directive 2005/50/EC, ligaments, shunts, stents and valves (e.g., pulmonary), nails and plates, intra-ocular lenses, internal closure devices (including vascular closure devices), tissue augmentation implants, peripheral vascular catheters, peripheral vascular grafts and stents, penile implants, non-absorbable sutures, bone cements and maxillo-facial implants, and visco-elastic surgical devices intended specifically for ophthalmic anterior segment surgery are in this category.
+
+However, if the implantable devices and long-term surgically invasive devices are designed to be placed in the teeth, they are classified as Class IIa. Examples of these include bridges and crowns, dental filling materials and pins, and dental alloys, ceramics, and polymers.
+
+Moreover, if the devices are used in direct contact with the heart, the central circulatory system, or the central nervous system, they are categorized as Class III. Examples include prosthetic heart valves, aneurysm clips, vascular prosthesis and stents, central vascular catheters, spinal stents, CNS electrodes, cardiovascular sutures, permanent and retrievable vena cava filters, septal occlusion devices, and intra-aortic balloon pumps.
+
+External left ventricular assisting devices are considered to have a biological effect or to be wholly or mainly absorbed, in which case they fall into Class III, alongside absorbable sutures. Adhesives and implantable devices claimed to be bioactive through the attachment of surface coatings such as phosphorylcholine, or those that undergo chemical change in the body—except if the devices are placed in the teeth, or to administer medicines—are also classified under Class III. Rechargeable non-active drug delivery systems warrant similar classification considerations. Directive 2003/12/EC introduced a derogation from this rule, reclassifying breast implants as Class III, as are breast implants themselves. Directive 2005/50/EC also introduced a derogation, reclassifying hip, knee, and shoulder joint replacements in Class III, including total hip, knee, and shoulder joint replacement systems and components of systems. Practical issues of classification note that these products are implants because, under normal conditions, a significant amount of the substance remains at the surgical site after the procedure. If these devices contain animal tissues or derivatives of animal tissues, they are covered by Rule 17. For closure of arteriotomies in the peripheral vascular system, please refer to the definition of the central circulatory system. Implants without bioactive coatings intended to secure teeth or prostheses to the maxillary or mandibular bones are in Class IIb following the general rule. Hydroxyapatite is considered as having a biological effect only if so claimed and demonstrated by the manufacturer. The clause about chemical change under this rule does not apply to products such as bone cements where the chemical change takes place during the placement and does not continue in the long term. For further information, refer to the provided link: http://ec.europa.eu/consumers/sectors/medical-devices/files/guide-stds-directives/final_reclass_note_12jan2007_en.pdf.
+
+Rule 9 pertains to active therapeutic devices intended to administer or exchange energy. Devices falling under this rule primarily include electrical equipment used in surgical procedures, like lasers and surgical generators, as well as devices for specialized treatments, such as radiation therapy. Additionally, this category encompasses stimulation devices; however, not all devices in this category deliver dangerous levels of energy, depending on the tissue involved. According to Rule 9, all active therapeutic devices intended to administer or exchange energy are categorized as Class IIa. Examples of such devices include those utilizing electrical and/or magnetic and electromagnetic energy, such as muscle stimulators, external bone growth stimulators, TENS devices, eye electromagnets, and electrical acupuncture. Devices utilizing thermal energy, such as cryosurgery equipment and heat exchangers (except specific types), also fall under this classification. Mechanical energy devices include powered dermatomes, powered drills, and dental hand pieces. Light-based devices include those used for phototherapy in skin treatment and neonatal care, while sound-based devices include hearing aids. Ultrasound equipment for physiotherapy is also included, unless their characteristics are such that they administer or exchange kinetic energy.
+
+Energy to and from the human body in a potentially hazardous way, taking account of the nature, the density, and the site of application of the energy, are classified in Class IIb. These include lung ventilators. Thermal energy applications encompass incubators for babies, warming blankets, blood warmers, and electrically powered heat exchangers, especially those used with patients incapable of reacting, communicating, and/or who lack a sense of feeling. Electrical energy involves high-frequency electrosurgical generators, electrocautery equipment, including their electrodes, external pacemakers, defibrillators, and electroconvulsive therapy equipment. Coherent light is used in surgical lasers. Ultrasound applications include lithotriptors and surgical ultrasound devices. Ionizing radiation devices comprise radioactive sources for afterloading therapy, therapeutic cyclotrons and linear accelerators, and therapeutic X-ray sources. All active devices intended to control or monitor the performance of active therapeutic devices in Class IIb, or intended to influence directly the performance of such devices, are in Class IIb. This includes external feedback systems for active therapeutic devices and afterloading control devices.
+
+Note 1: The decision as to whether a medical device administers or exchanges energy to and from the human body in a potentially hazardous way should take into account the following factors. The concept of "potentially hazardous" is dependent on the type of technology involved and the intended application of the device to the patient and not on the measures adopted by the manufacturer in view of good design management (e.g. use of technical standards, risk analysis). For instance all devices intended to enit ionizing radiation, all lung ventilators and lithotriptors should be in Class IIb. However, the manufacturer's obligation to comply with design requirements and solutions adopted, such as use of standards, exist independently from the classification system.
+
+41
+
+Rule 10 - Active devices for diagnosis primarily covers a wide range of commonly used equipment in various fields, such as ultrasound diagnosis, capture of physiological signals, and therapeutic and diagnostic radiology. According to RULE 10, active devices intended for diagnosis fall into Class IIa if they are designed to supply energy absorbed by the human body, except for devices used to illuminate the patient’s body in the visible spectrum. Examples include magnetic resonance equipment, pulp testers, evoked response stimulators, and diagnostic ultrasound. Devices are also in Class IIa if they are intended to image in vivo distribution of radiopharmaceuticals, such as gamma cameras, positron emission tomography, and single photon emission computer tomography. Additionally, devices intended to allow direct diagnosis or monitoring of vital physiological processes, such as electrocardiographs, electroencephalographs, cardioscopes with or without pacing pulse indicators, electronic thermometers, electronic stethoscopes, and electronic blood pressure measuring equipment, are in Class IIa.
+
+However, if these devices are specifically intended for monitoring vital physiological parameters where variations could result in immediate danger to the patient, such as cardiac performance, respiration, or CNS activity, they are classified into Class IIb. Examples include intensive care monitoring and alarm devices (e.g., blood pressure, temperature, oxygen saturation), biological sensors, blood gas analyzers used in open heart surgery, cardioscopes, and apnoea monitors, including those in home care.
+
+Active devices intended to emit ionizing radiation and meant for diagnostic and therapeutic interventional radiology, including those that control or monitor such devices or directly influence their performance, are classified into Class IIb. An example of such devices includes diagnostic X-ray sources.
+
+Examples of special concepts:
+
+Note 1: Vital physiological processes and parameters include, for exarmple respiration, heart rate, cerebral functions, blood gases, blood pressure and body ternperature. Medical devices intended to be used for continuous surveillance of vital physiological processes in anaesthesia, intensive care or emergency care are in Class IIb, whilst medical devices intended to be used to obtain readings of vital physiological signals in routine check ups and in self-monitoring are in Class Ila. A thermal imaging device intended to monitor blood flow is not considered to be a tennperature measuring device.
+
+Note 2: Devices specifically intended to monitor AIMDs fall under the AIMD Directive.
+
+Note 3: Therapeutic interventional radiology refers to diagnosis being carried out during surgical procedures.
+
+Note 4: This refers to active devices for the control, monitoring or influencing of the errission of ionizing and not to the subsequent processing, recording or viewing of the resulting image.
+
+Rule 11 concerns active devices intended to administer and/or remove medicines, body liquids, or other substances to or from the body. This rule primarily covers drug delivery systems and anesthesia equipment. According to Rule 11, all active devices intended for these purposes are categorized as Class IIa. Examples include suction equipment, feeding pumps, jet injectors for vaccination, and nebulisers used on conscious and spontaneously breathing patients where failure to deliver the appropriate dosage characteristics is not potentially hazardous. However, if such administration or removal is performed in a manner that is potentially hazardous, considering the nature of the substances involved, the part of the body concerned, and the mode of application, these devices are classified as Class IIb. Examples of devices in this category include infusion pumps, ventilators, anesthesia machines, anesthetic vaporisers, dialysis equipment, blood pumps for heart-lung machines, hyperbaric chambers, pressure regulators for medical gases, medical gas mixers, moisture exchangers in breathing circuits if used on unconscious or non-spontaneously breathing patients, and nebulisers where failure to deliver the appropriate dosage characteristics could be hazardous.
+
+Rule 12 covers all active devices not addressed by the preceding rules and classifies them as Class I. Examples include active diagnostic devices intended to illuminate the patient's body in the visible spectrum, like examination lights, or to optically view the body, such as surgical microscopes. It also encompasses devices generally intended for external patient support, such as hospital beds, patient hoists, wheelchairs, and dental patient chairs. Additionally, it includes active diagnostic devices intended for thermography and dental curing lights.
+
+Rule 13 covers combination devices that include a medicinal substance incorporated to assist the functioning of the device. It does not cover devices incorporating substances that under different circumstances could be considered medicinal but are incorporated solely to maintain certain characteristics of the device without acting on the body. The device's primary function should not rely on the pharmacological, metabolic, or immunological effect of the substance. If it does, the product is classified as a medicinal product and not a device under this Directive. Rule 13 specifies that devices incorporating a medicinal substance which could be a medicinal product on its own and that acts ancillary to the device's main function are classified in Class III. Examples include antibiotic bone cements, condoms with spermicide, heparin-coated catheters, endodontic materials with antibiotics, ophthalmic irrigation solutions primarily for irrigation but supporting corneal metabolism, dressings with antimicrobial agents for wound action, contraceptive intrauterine devices with copper or silver, and drug-eluting stents. Devices incorporating a human blood derivative are also Class III, such as surgical sealants with human serum albumin. An "integral part" means the device and substance are combined at administration.
+
+Rule 14 pertains to devices used for contraception or the prevention of sexually transmitted diseases. These intended uses address special cases of human vulnerability that are not adequately covered by the usual criteria of time, invasiveness, and organic function. Although Rule 14 encompasses two distinct device applications, some devices may fulfill both functions, such as condoms. Devices aimed at preventing the sexual transmission of HIV also fall under this rule. According to Rule 14, all devices used for contraception or the prevention of sexually transmitted diseases are categorized as Class IIb unless they are implantable or long-term invasive devices, in which they are classified as Class III. Examples of such devices include condoms, contraceptive diaphragms, and contraceptive intrauterine devices (IUDs). It is important to note that intrauterine contraceptives whose primary purpose is to release progestogens are not considered medical devices, as stated in Article 1.3, second paragraph of the Directive.
+
+Rule 15 addresses specific disinfecting, cleaning, and rinsing devices, primarily pertaining to various contact lens fluids and substances and equipment used in medical settings to disinfect medical devices. According to Rule 15, all devices intended specifically for disinfecting, cleaning, rinsing, or, when appropriate, hydrating contact lenses fall under Class IIb. Examples include contact lens solutions and comfort solutions. Devices intended for disinfecting medical devices are classified as Class IIa, but if they are meant for disinfecting invasive devices, they are classified as Class IIb. Examples include disinfectants for non-invasive medical devices and equipment such as sterilizers for medical devices in medical environments, washers-disinfectors for non-invasive medical devices, denture disinfecting products, washers-disinfectors for endoscopes, and disinfectants for the fluid pathways of haemodialysis equipment, ocular prosthesis, intraosseous transcutaneous amputation prosthesis, surgical equipment, and invasive dental equipment. This rule does not apply to products intended to clean medical devices other than contact lenses by physical action¹. In terms of classification, Note 1 specifies that the rule does not apply to mechanical cleaning devices like brushes and ultrasound, unless they are specifically intended for use with medical devices.
+
+Rule 16 stipulates that devices specifically intended for recording X-ray diagnostic images are classified as Class IIa. Examples of such devices include X-ray films and photostimulable phosphor plates. It is important to note that this refers to primary recording media, such as X-ray films, and not to media used for subsequent reproduction.
+
+Rule 17 addresses devices that contain or are made from animal tissues rendered non-viable or derivatives of such tissues, meaning they can no longer undergo cellular metabolic activity. Devices with viable animal tissues or any human tissues or derivatives are excluded from this Directive. More details can be found in MEDDEV 2.11/1 rev.213. Some devices may use industrial raw materials with minimal amounts of tallow or tallow derivatives (e.g., stearates in polymers), which aren't considered animal tissue derivatives for this rule, thus the rule doesn't apply to them. Rule 17 states that all devices manufactured using non-viable animal tissues or derivatives are Class III, unless they're only intended to contact intact skin. Examples include biological heart valves, porcine xenograft dressings, implants and dressings made from collagen, and devices utilizing hyaluronic acid of animal origin. For practical classification, devices made from non-viable animal tissue that only contact intact skin (like leather components of orthopedic appliances) fall under Class I per Rule 1. Note that derivatives refer to products processed from animal tissues, excluding substances like milk, silk, beeswax, hair, lanolin. Intact skin also refers to skin around an established stoma unless breached.
+
+Rule 18 - Blood bags. This is a special rule that covers only blood bags. By derogation from other rules, blood bags are in Class IIb. For example, blood bags, including those containing or coated with an anticoagulant. Where blood bags have a function greater than for storing purposes and include systems for preservation other than anti-coagulants, then other rules (e.g. rule 13) may apply. Note: Blood bags are described in the European Pharmacopoeia in the monograph on "Containers for Blood and Blood Components".
