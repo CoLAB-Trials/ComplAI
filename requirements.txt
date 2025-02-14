@@ -100,3 +100,4 @@ unstructured==0.16.5
 unstructured-client==0.27.0
 unstructured-inference==0.8.1
 unstructured.pytesseract==0.3.13
+pysqlite3-binary
