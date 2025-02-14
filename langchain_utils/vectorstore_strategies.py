@@ -55,7 +55,11 @@ def get_vectorstore(text_chunks: List[str], embeddings: Any, config: Dict[str, A
         vectorstore = Milvus.from_documents(
                 documents=text_chunks,
                 embedding=embeddings,
-                connection_args={"uri": f"db/./milvus{store_path}.db"},
+                connection_args={
+                    "uri": "in03-88a0c9bd0f51ecf.serverless.gcp-us-west1.cloud.zilliz.com",
+                    "token": "f19a5ce7ea1662aee58534a57cb9dab3b930f05f8899a3a359121c04d21fbf8a6babf3f4a0bfecd362e94af0b201a31316ef3e98",  # API key, for serverless clusters which can be used as replacements for user and password
+                    "secure": True,
+                    },
                 drop_old=True,
         )
     else:
@@ -89,7 +93,11 @@ def load_vectorstore(embeddings: Any, config: Dict[str, Any], llm: Optional[Any]
     if config["vectorstore"]["provider"] == "Milvus":
         vectorstore = Milvus(
             embedding_function=embeddings,
-            connection_args={"uri": f"db/./milvus{store_path}.db"}
+            connection_args={
+                    "uri": "in03-88a0c9bd0f51ecf.serverless.gcp-us-west1.cloud.zilliz.com",
+                    "token": "f19a5ce7ea1662aee58534a57cb9dab3b930f05f8899a3a359121c04d21fbf8a6babf3f4a0bfecd362e94af0b201a31316ef3e98",  # API key, for serverless clusters which can be used as replacements for user and password
+                    "secure": True,
+                    },
         )
     elif config["vectorstore"]["provider"] == "FAISS":
         vectorstore = faiss.FAISS.load_local(
