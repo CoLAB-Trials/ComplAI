@@ -61,7 +61,7 @@ def main():
                 vectorstore = get_vectorstore(text_chunks, embeddings=embeddings, config=config, llm=llm_generation)
 
         # Setup conversation chain
-        llm_retrieve = llm_initialization(model=config["models"]["retrieve"]["name"], provider=config["models"]["retrieve"]["provider"], temperature=config["models"]["retrieve"]["temperature"])
+        llm_retrieve = llm_initialization(model=config["models"]["retrieve"]["name"], provider=config["models"]["retrieve"]["provider"], temperature=config["models"]["retrieve"]["temperature"], api_key= st.secrets["openai_secret_key"])
         retriever_chain = retriever(llm_retrieve, vectorstore, config=config, embeddings=embeddings)
         
         # create conversation chain
