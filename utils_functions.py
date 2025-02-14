@@ -75,7 +75,6 @@ def llm_initialization(provider: str = "HuggingFace", model: str = "meta-llama/L
     Returns:
     llm: An initialized language model object based on the specified provider and model.
     """
-    os
     if provider == "HuggingFace":
         llm = setup_llm_pipeline(model_name=model, temperature=temperature)
     elif provider == "OpenAI":
