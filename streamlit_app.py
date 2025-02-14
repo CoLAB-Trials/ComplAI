@@ -1,3 +1,7 @@
+__import__('pysqlite3')
+import sys
+sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
+
 import streamlit as st
 from langchain.globals import set_debug
 from langchain_utils.retrieval_strategies import retriever
@@ -11,9 +15,7 @@ from utils_functions import setup_llm_pipeline, create_conversation_chain, curat
 from langchain_utils.vectorstore_strategies import get_vectorstore, load_vectorstore, vectorstore_existence_check
 from langchain_utils.retrieval_strategies import retriever
 from utils.reading_data import reader
-__import__('pysqlite3')
-import sys
-sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
+
 #set_debug(True)
 
 # Set page configuration at the very top
